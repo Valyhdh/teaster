@@ -49,23 +49,23 @@ body {
 }
 
 .call {
-    background-image: url(img/header_img/call.svg);
+    background-image: url('img/header_img/call.svg');
 }
 
 .chat {
-    background-image: url(img/header_img/chat.svg);
+    background-image: url("img/header_img/chat.svg");
 }
 
 .profile {
-    background-image: url(img/header_img/profile.svg);
+    background-image: url(/img/header_img/profile.svg);
 }
 
 .repair {
-    background-image: url(img/header_img/repair.svg);
+    background-image: url("/img/header_img/repair.svg");
 }
 
 .checkstatus {
-    background-image: url(img/header_img/checkstatus.svg);
+    background-image: url('/img/header_img/checkstatus.svg');
 }
 
 .content__more::before {
