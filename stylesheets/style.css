@@ -45,7 +45,7 @@ body {
 }
 
 .burger {
-    background-image: url(img/header_img/burger.svg);
+    background-image: url("img/header_img/burger.svg");
 }
 
 .call {
@@ -399,7 +399,7 @@ body {
     }
 
     .main-navigation__title.repair::after {
-        content: url(img/header_img/repair.svg);
+        content: url("img/header_img/repair.svg");
         position: relative;
         left: 10%;
         top: 25%;
