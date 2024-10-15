@@ -14,10 +14,10 @@ body {
     font-family: 'TT Lakes Condensed';
     src: url('TTLakesCondensed-Bold.eot');
     src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
-        url('./fonts/TTLakesCondensed-Bold.eot') format('embedded-opentype'),
-        url('./fonts/TTLakesCondensed-Bold.woff2') format('woff2'),
-        url('./fonts/TTLakesCondensed-Bold.woff') format('woff'),
-        url('./fonts/TTLakesCondensed-Bold.ttf') format('truetype');
+        url('fonts/TTLakesCondensed-Bold.eot') format('embedded-opentype'),
+        url('fonts/TTLakesCondensed-Bold.woff2') format('woff2'),
+        url('fonts/TTLakesCondensed-Bold.woff') format('woff'),
+        url('fonts/TTLakesCondensed-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -28,48 +28,48 @@ body {
     font-style: normal;
     font-weight: normal;
     src: local("TT Lakes Condensed"),
-        url("/fonts/TTLakes-Regular.woff") format("woff"),
-        url("/fonts/TTLakes-Regular.ttf") format("truetype");
+        url("fonts/TTLakes-Regular.woff") format("woff"),
+        url("fonts/TTLakes-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'TT Lakes';
     src: url('TTLakes-Medium.eot');
     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-        url('/fonts/TTLakes-Medium.eot') format('embedded-opentype'),
-        url('/fonts/TTLakes-Medium.woff2') format('woff2'),
-        url('/fonts/TTLakes-Medium.woff') format('woff'),
-        url('/fonts/TTLakes-Medium.ttf') format('truetype');
+        url('fonts/TTLakes-Medium.eot') format('embedded-opentype'),
+        url('fonts/TTLakes-Medium.woff2') format('woff2'),
+        url('fonts/TTLakes-Medium.woff') format('woff'),
+        url('fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 .burger {
-    background-image: url(../img/header_img/burger.svg);
+    background-image: url(img/header_img/burger.svg);
 }
 
 .call {
-    background-image: url(/img/header_img/call.svg);
+    background-image: url(img/header_img/call.svg);
 }
 
 .chat {
-    background-image: url(/img/header_img/chat.svg);
+    background-image: url(img/header_img/chat.svg);
 }
 
 .profile {
-    background-image: url(/img/header_img/profile.svg);
+    background-image: url(img/header_img/profile.svg);
 }
 
 .repair {
-    background-image: url(/img/header_img/repair.svg);
+    background-image: url(img/header_img/repair.svg);
 }
 
 .checkstatus {
-    background-image: url(/img/header_img/checkstatus.svg);
+    background-image: url(img/header_img/checkstatus.svg);
 }
 
 .content__more::before {
-    content: url(/img/main_img/expand.svg);
+    content: url(img/main_img/expand.svg);
     margin: 14px 0 0 10px;
 }
 
@@ -399,14 +399,14 @@ body {
     }
 
     .main-navigation__title.repair::after {
-        content: url(/img/header_img/repair.svg);
+        content: url(img/header_img/repair.svg);
         position: relative;
         left: 10%;
         top: 25%;
     }
 
     .main-navigation__title.checkstatus::after {
-        content: url(/img/header_img/checkstatus.svg);
+        content: url(img/header_img/checkstatus.svg);
         position: relative;
         left: 10%;
         top: 25%;
