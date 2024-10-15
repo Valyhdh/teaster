@@ -45,11 +45,11 @@ body {
 }
 
 .burger {
-    background-image: url("\teaster\img\header_img\burger.svg");
+    background-image: url("img/header_img/chat.svg");
 }
 
 .call {
-    background-image: url('img/header_img/call.svg');
+    background-image: url("img/header_img/call.svg");
 }
 
 .chat {
@@ -57,19 +57,19 @@ body {
 }
 
 .profile {
-    background-image: url(/img/header_img/profile.svg);
+    background-image: url("img/header_img/profile.svg");
 }
 
 .repair {
-    background-image: url("/img/header_img/repair.svg");
+    background-image: url("img/header_img/repair.svg");
 }
 
 .checkstatus {
-    background-image: url('/img/header_img/checkstatus.svg');
+    background-image: url("img/header_img/checkstatus.svg");
 }
 
 .content__more::before {
-    content: url(img/main_img/expand.svg);
+    content: url("img/main_img/expand.svg");
     margin: 14px 0 0 10px;
 }
 
@@ -406,7 +406,7 @@ body {
     }
 
     .main-navigation__title.checkstatus::after {
-        content: url(img/header_img/checkstatus.svg);
+        content: url("img/header_img/checkstatus.svg");
         position: relative;
         left: 10%;
         top: 25%;
