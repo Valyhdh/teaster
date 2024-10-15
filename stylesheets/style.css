@@ -14,10 +14,10 @@ body {
     font-family: 'TT Lakes Condensed';
     src: url('TTLakesCondensed-Bold.eot');
     src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
-        url('/fonts/TTLakesCondensed-Bold.eot') format('embedded-opentype'),
-        url('/fonts/TTLakesCondensed-Bold.woff2') format('woff2'),
-        url('/fonts/TTLakesCondensed-Bold.woff') format('woff'),
-        url('/fonts/TTLakesCondensed-Bold.ttf') format('truetype');
+        url('./fonts/TTLakesCondensed-Bold.eot') format('embedded-opentype'),
+        url('./fonts/TTLakesCondensed-Bold.woff2') format('woff2'),
+        url('./fonts/TTLakesCondensed-Bold.woff') format('woff'),
+        url('./fonts/TTLakesCondensed-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .burger {
-    background-image: url(/img/header_img/burger.svg);
+    background-image: url(../img/header_img/burger.svg);
 }
 
 .call {
