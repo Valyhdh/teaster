@@ -230,7 +230,7 @@ body {
 
 .aside {
     width: 320px;
-    min-height: 100vh;
+    height: 100%;    
     position: fixed;
     top: 0;
     display: flex;
@@ -239,6 +239,11 @@ body {
     box-shadow: 10px 0px 52px 0px #9598a5;
     display: none;
     background-color: #ffffff;
+    overflow-y: scroll;
+    
+}
+.aside::-webkit-scrollbar {
+    display: none;
 }
 
 .burger:active ~ .aside{
@@ -285,10 +290,12 @@ body {
 .aside__navigation {
     display: flex;
     flex-direction: column;
+    
 
 }
 
 .aside__menu-item {
+   
     
 }
 
