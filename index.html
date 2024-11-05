@@ -13,31 +13,109 @@
         <div class="header-page">
             <section class="header-basic">
                 <nav class="header-basic__navigation header-navigation">
-                    <a href="#" class="header-navigation__title burger bottom"></a>
+                    
+                    <button class="header-navigation__title burger bottom" id="burger" onmousedown="viewDiv()"></button>
+                    
                 </nav>
                 <div class="header-basic__logo">
                     <img src="img/header_img/logo.svg" alt="логотип">
                 </div>
             </section>
             <nav class="header-navigation">
-                <a href="#" class="header-navigation__title call bottom title_dis-md">
+                <button class="header-navigation__title call bottom title_dis-md">
 
-                </a>
-                <a href="#" class="header-navigation__title chat bottom title_dis-md">
+                </button>
+                <button class="header-navigation__title chat bottom title_dis-md">
 
-                </a>
-                <a href="#" class="header-navigation__title profile bottom title_dis-md">
+                </button>
+                <button class="header-navigation__title profile bottom title_dis-md">
 
-                </a>
-                <a href="#" class="header-navigation__title repair bottom">
+                </button>
+                <button class="header-navigation__title repair bottom">
 
-                </a>
-                <a href="#" class="header-navigation__title checkstatus bottom">
+                </button>
+                <button class="header-navigation__title checkstatus bottom">
 
-                </a>
+                </button>
             </nav>
         </div>
     </header>
+    <aside class="aside" id="aside">
+        <div class="aside__header-nav">
+            <section class="aside__header">
+                <button class="aside__header-bottom bottom cancel" id="cancel"></button>
+                <img src="img/header_img/logo.svg" alt="" class="aside__logo">
+                <button class="aside__header-bottom bottom search"></button>
+            </section>
+            <section class="aside__navigation">
+                <input type="radio" name="conects" id="in1">
+                <label for="in1" class="aside__menu-link">
+                    Ремонт техники
+                </label>
+                <input type="radio" name="conects" id="in2">
+                <label for="in2" class="aside__menu-link">
+                    Услуги и сервисы
+                </label>
+                <input type="radio" name="conects" id="in3">
+                <label for="in3" class="aside__menu-link">
+                    Корпоративным клиентам
+                </label>
+                <input type="radio" name="conects" id="in4">
+                <label for="in4" class="aside__menu-link">
+                    Продавцам техники
+                </label>
+                <input type="radio" name="conects" id="in5">
+                <label for="in5" class="aside__menu-link">
+                    Партнерам
+                </label>
+                <input type="radio" name="conects" id="in6">
+                <label for="in6" class="aside__menu-link">
+                    Производителям
+                </label>
+                <input type="radio" name="conects" id="in7">
+                <label for="in7" class="aside__menu-link">
+                    Наши сервисные центры
+                </label>
+                <input type="radio" name="conects" id="in8">
+                <label for="in8" class="aside__menu-link">
+                    Контакты
+                </label>
+            </section>
+        </div>
+        <div class="aside__footer-nav">
+            <section class="aside__info">
+                <nav class="aside__info-navigation">
+                    <a href="#" class="aside-navigation__title call bottom">
+
+                    </a>
+                    <a href="#" class="aside-navigation__title chat bottom">
+
+                    </a>
+                    <a href="#" class="aside-navigation__title profile bottom">
+
+                    </a>
+                </nav>
+                <div class="aside__info-contacts">
+                    <a href="mailto:mail@cps.com" class="aside__info-contacts-email">mail@cps.com</a>
+                    <a href="tel:" class="aside__info-contacts-tel">8 800 890 8900</a>
+                </div>
+                <form class="aside__lang-title">
+                    <input type="radio" name="lang" id="ru">
+                <label for="ru" class="aside__lang-item">
+                    RU
+                </label>
+                <input type="radio" name="lang" id="en">
+                <label for="en" class="aside__lang-item">
+                    EN
+                </label>
+                <input type="radio" name="lang" id="ch">
+                <label for="ch" class="aside__lang-item">
+                    CH
+                </label>
+                </form>
+            </section>
+        </div>
+    </aside>
     <main class="main">
         <div class="main-page">
             <h1 class="title">Услуги и сервисы</h1>
@@ -58,10 +136,10 @@
                 <a href="#" class="scrollbar__menu-link">Ремонтируемые устройства</a>
             </p>
             <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link e1">Цены на услуги</a>
+                <a href="#" class="scrollbar__menu-link">Цены на услуги</a>
             </p>
             <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link e2">Адреса сервисных центров</a>
+                <a href="#" class="scrollbar__menu-link">Адреса сервисных центров</a>
             </p>
             <p class="scrollbar__menu-item">
                 <a href="#" class="scrollbar__menu-link">Дополнительные на услуги</a>
@@ -73,7 +151,7 @@
                 <a href="#" class="scrollbar__menu-link">Отзывы</a>
             </p>
         </div>
-        
+
         <article class="content">
             <section class="content__text">
                 <p class="content__main-text_dis-sm content__main-text">
@@ -103,6 +181,29 @@
         </article>
     </main>
 
+    <script>
+        let isVisible = true;
+        let isDisable = true;
+const div = document.getElementById('aside');
+
+function trigger() {
+  isVisible = !isVisible;
+  div.style.display = isVisible ? "flex" : "none";
+};
+function trigger() {
+  isDisable = !isDisable;
+  div.style.display = isDisable ? "flex" : "none";
+};
+
+document
+  .getElementById('burger')
+  .addEventListener('click', trigger);
+document
+  .getElementById('cancel')
+  .addEventListener('click', trigger);
+
+
+    </script>
 </body>
 
 </html>
