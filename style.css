@@ -410,7 +410,7 @@ input[type="checkbox"]:checked ~ .aside{
     .main,
     .footer {
         min-width: 768px;
-        max-width: 1120px;
+        max-width: 1440px;
     }
 
     .header-page::after {
@@ -458,13 +458,9 @@ input[type="checkbox"]:checked ~ .aside{
     }
 
     .dis-md,
-    .title_dis-md {
-        display: block;
-    }
-
+    .title_dis-md,
     .content__main-text_dis-md {
         display: block;
-
     }
 
     .content__main-text_dis-sm {
@@ -485,27 +481,25 @@ input[type="checkbox"]:checked ~ .aside{
 
 }
 
-@media (min-width:1120px) {
+@media (min-width:1440px) {
 
-
-    .header,
-    .main,
-    .footer {
-        min-width: 1120px;
+    .content__main-page{
         margin: 0 auto;
+       width: 1440px;
     }
+
+    
+    
 
     .header,
     .item_dis-md,
     .content__main-text_dis-md,
-    .content__main-text_dis-sm {
+    .content__main-text_dis-sm,
+    .cancel {
         display: none;
     }
 
-    .item_dis-lg {
-        display: block;
-    }
-
+   
 
     .checkstatus {
         margin-right: 0;
@@ -516,32 +510,28 @@ input[type="checkbox"]:checked ~ .aside{
         align-items: center;
         justify-content: space-between;
         height: 50px;
-        padding-top: 30px;
-        padding-bottom: 20px;
+        padding: 30px 0 20px 0;
     }
 
     .main-navigation,
     .nav-dis-lg-flex {
         display: flex;
     }
-
-
-    .content {
-        justify-content: start;
+    
+    .main-navigation{
+        padding-right: 70px;
     }
 
+
     .content__main-text_dis-lg,
-    .dis-lg {
+    .dis-lg,
+    .item_dis-lg {
         display: block;
     }
 
-
-
-
-
     .content {
         align-items: start;
-
+        justify-content: start;
     }
 
     .content__main-text {
@@ -604,6 +594,30 @@ input[type="checkbox"]:checked ~ .aside{
     .scrollbar__menu-link {
         font-size: 16px;
     }
+    
+    .aside{
+        display: flex;
+        box-shadow: none;
+        position:static ;
+        margin-top: 15px;
+        min-width: 250px;
+        
+    }
+
+    .content__main-page{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aside__logo{
+        padding-left:24px ;
+    }
+
+    .aside__header{
+        margin-bottom: 0;
+    }
+    
 
 
 }
