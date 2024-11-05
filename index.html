@@ -14,7 +14,7 @@
             <section class="header-basic">
                 <nav class="header-basic__navigation header-navigation">
                     
-                    <button class="header-navigation__title burger bottom" id="burger" onmousedown="viewDiv()"></button>
+                    <button class="header-navigation__title burger bottom" id="Burger" onmousedown="viewDiv()"></button>
                     
                 </nav>
                 <div class="header-basic__logo">
@@ -22,7 +22,7 @@
                 </div>
             </section>
             <nav class="header-navigation">
-                <button class="header-navigation__title call bottom title_dis-md">
+                <button class="header-navigation__title call bottom title_dis-md" id="Feedback">
 
                 </button>
                 <button class="header-navigation__title chat bottom title_dis-md">
@@ -40,11 +40,30 @@
             </nav>
         </div>
     </header>
+    <section class="feedback modal" id="feedback">
+        <div class="feedback__header modal__header">
+        <button id="FeedbackDis" class="modal__close bottom close"></button>
+        <h2 class="feedback__title modal__title">Обратная связь</h2>
+    </div>
+        <form action="" method="" class="feedback__form modal__form">
+        <fieldset class="feedback__form-title modal__form-title">
+        <input type="text" id="NameFeedback" required placeholder="Имя" class="feedback__form-item modal__form-item">
+        <input type="tel" name="TelFeedback" id="TelFeedback" required placeholder="Телефон" class="feedback__form-item modal__form-item">
+        <input type="email" name="EmailFeedback" id="EmailFeedback" required placeholder="Электронная почта" class="feedback__form-item modal__form-item">
+        <input type="text" placeholder="Сообщение" class="feedback__form-item feedback__form-item_message modal__form-item">
+        </fieldset>
+        <p class="feedback__description modal__description">Нажимая “отправить”, вы даете согласие на <a href="" class="modal__description-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="" class="modal__description-link">политикой конфиденциальности</a></p>
+        <button type="submit" class="feedback__button modal__button">ОТПРАВИТЬ</button>
+        </form>
+    </section>
+    <section>
+
+    </section>
     <div class="content__main-page">
     <aside class="aside" id="aside">
         <div class="aside__header-nav">
             <section class="aside__header">
-                <button class="aside__header-bottom bottom cancel" id="cancel"></button>
+                <button class="aside__header-bottom bottom close" id="BurgerDis"></button>
                 <img src="img/header_img/logo.svg" alt="" class="aside__logo">
                 <button class="aside__header-bottom bottom search"></button>
             </section>
@@ -86,7 +105,7 @@
         <div class="aside__footer-nav">
             <section class="aside__info">
                 <nav class="aside__info-navigation">
-                    <a href="#" class="aside-navigation__title call bottom">
+                    <a href="#" class="aside-navigation__title call bottom" id="Feedback2">
 
                     </a>
                     <a href="#" class="aside-navigation__title chat bottom">
@@ -184,27 +203,38 @@
 </div>
     
     <script>
-        let isVisible = true;
-        let isDisable = true;
-const div = document.getElementById('aside');
-
-function trigger() {
-  isVisible = !isVisible;
-  div.style.display = isVisible ? "flex" : "none";
+   var burger1 = document.getElementById ('BurgerDis');
+   burger1.addEventListener('click',func1);
+   var burger2 = document.getElementById ('Burger');
+   burger2.addEventListener('click',func1);
+ 
+function func1() {
+  var burger = document.getElementById ('aside');
+  if (burger.style.display !== 'none'){
+    burger.style.display="none";
+  }else{
+    burger.style.display="block";
+  }
+  
 };
-function trigger() {
-  isDisable = !isDisable;
-  div.style.display = isDisable ? "flex" : "none";
+
+
+var feedback1 = document.getElementById ('FeedbackDis');
+feedback1.addEventListener('click',func2);
+   var feedback2 = document.getElementById ('Feedback');
+   feedback2.addEventListener('click',func2);
+   var feedback3 = document.getElementById ('Feedback2');
+   feedback3.addEventListener('click',func2);
+ 
+function func2() {
+  var feedback = document.getElementById ('feedback');
+  if (feedback.style.display !== 'none'){
+    feedback.style.display="none";
+  }else{
+    feedback.style.display="block";
+  }
+  
 };
-
-document
-  .getElementById('burger')
-  .addEventListener('click', trigger);
-document
-  .getElementById('cancel')
-  .addEventListener('click', trigger);
-
-
     </script>
 </body>
 
