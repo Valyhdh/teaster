@@ -198,43 +198,43 @@
             <section class="content_img">
                 <img src="img/main_img/logo.png" class="content-img" alt="Наша компания">
             </section>
+            
         </article>
     </main>
 </div>
     
     <script>
-   var burger1 = document.getElementById ('BurgerDis');
-   burger1.addEventListener('click',func1);
-   var burger2 = document.getElementById ('Burger');
-   burger2.addEventListener('click',func1);
  
-function func1() {
-  var burger = document.getElementById ('aside');
-  if (burger.style.display !== 'none'){
-    burger.style.display="none";
-  }else{
-    burger.style.display="block";
-  }
-  
-};
 
 
-var feedback1 = document.getElementById ('FeedbackDis');
-feedback1.addEventListener('click',func2);
-   var feedback2 = document.getElementById ('Feedback');
-   feedback2.addEventListener('click',func2);
-   var feedback3 = document.getElementById ('Feedback2');
-   feedback3.addEventListener('click',func2);
- 
-function func2() {
-  var feedback = document.getElementById ('feedback');
-  if (feedback.style.display !== 'none'){
-    feedback.style.display="none";
-  }else{
-    feedback.style.display="block";
-  }
-  
-};
+
+
+document.getElementById('Burger').addEventListener('click', function(){
+  document.getElementById('aside').classList.add('--show');
+});
+
+document.getElementById('BurgerDis').addEventListener('click', function(){
+  document.getElementById('aside').classList.remove('--show');
+});
+
+
+
+document.getElementById('Feedback2').addEventListener('click', function(){
+  document.getElementById('feedback').classList.add('--show');
+});
+
+document.getElementById('FeedbackDis').addEventListener('click', function(){
+  document.getElementById('feedback').classList.remove('--show');
+});
+
+
+document.getElementById('Feedback').addEventListener('click', function(){
+  document.getElementById('feedback').classList.add('--show');
+});
+
+
+
+
     </script>
 </body>
 

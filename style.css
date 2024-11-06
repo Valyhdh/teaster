@@ -101,9 +101,6 @@ body {
 
 }
 
-
-
-
 .header-page::after {
     content: " ";
     background: #EAEAEA;
@@ -153,9 +150,16 @@ body {
     right: 0;
     background-color: #ffffff;
     z-index: 2;
+    transition: all .5s linear;
+    transform: translateX(120%);
     border-left:2px solid #D9FFF5;
-    display: none;
 }
+
+.modal.--show {
+    transform: translateX(0%);
+    
+}
+
 
 .modal__header{
     flex-direction: column;
@@ -306,6 +310,7 @@ body {
     font-size: 14px;
     margin-left: 16px;
     
+    
 
 }
 
@@ -318,10 +323,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 10px 0px 52px 0px #9598a5;
-    display: none;
+    transition: transform .5s linear;
+    transform: translateX(-120%);
     background-color: #ffffff;
     overflow-y: scroll;
 }
+
+.aside.--show {
+    transform: translateX(0%);
+}
+
 .aside::-webkit-scrollbar {
     display: none;
 }
@@ -685,6 +696,8 @@ input[type="checkbox"]:checked ~ .aside{
         position:static ;
         margin-top: 15px;
         min-width: 250px;
+        transform: translate(0);
+        transition: none;
         
     }
 
@@ -701,6 +714,8 @@ input[type="checkbox"]:checked ~ .aside{
     .aside__header{
         margin-bottom: 0;
     }
+
+    
     
 
 
