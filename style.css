@@ -81,8 +81,6 @@ body {
     margin: 14px 0 0 10px;
 }
 
-
-
 .header {
     height: 88px;
     padding-bottom: 24px;
@@ -141,9 +139,9 @@ body {
 }
 
 .modal{
-    width:296px;
+    width: 320px;
     height: 100%;
-    padding-right: 24px;
+    
     display: flex;
     flex-direction: column;
     position:fixed;
@@ -198,7 +196,17 @@ body {
     margin-bottom:16px;
     border: 1px solid #EAEAEA;
     border-radius: 8px;
-    
+    box-sizing: border-box;
+    transition: all .1s;
+}
+
+.modal__form-item:focus{
+    outline: 2px solid #41F6D7;
+}
+
+.modal__form-item:focus::placeholder{
+    color: #000000;
+    opacity:0.7;
 }
 
 .modal__form-item::placeholder{
@@ -237,6 +245,7 @@ body {
     font-family: 'TT Lakes';
     font-weight: 500;
     align-self: flex-end;
+    transition: transform .4s, opacity .4s;
 }
 
 .modal__button::after{
@@ -245,6 +254,16 @@ body {
     left: 5px;
     top:1px ;
     
+}
+
+.modal__button:hover{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.modal__button:active{
+    transform: scale(0.8);
+    opacity: 1;
 }
 
 
@@ -316,9 +335,6 @@ body {
     color: #1B1C21;
     font-size: 14px;
     margin-left: 16px;
-    
-    
-
 }
 
 .aside {
@@ -363,8 +379,6 @@ body {
     padding: 16px 62px 0px 0px;
 }
 
-
-
 .bottom{
     transition: transform 0.3s, opacity 0.3s;
     padding: 0;
@@ -379,13 +393,11 @@ body {
     opacity: 0.8;
     transform: scale(0.9);
 }
+
 .bottom:active{
     transform: scale(0.8);
     
 }
-
-
-
 
 .aside__navigation {
     display: flex;
@@ -410,7 +422,6 @@ body {
 input[type="radio"]:checked + .aside__menu-link {
     color: #7E7E82;
     border-left:5px solid #41F6D7;
-    
 }
 
 input[type="radio"]:checked + .aside__lang-item{
@@ -421,12 +432,9 @@ input[type="radio"]{
     display: none;
 }
 
-
-
 input[type="checkbox"]:checked ~ .aside{
     display: none;
 }
-
 
 .aside__info-navigation {
     display: flex;
@@ -436,8 +444,6 @@ input[type="checkbox"]:checked ~ .aside{
 .aside-navigation__title {
     margin-bottom: 0;
 }
-
-
 
 .aside__info-contacts {
     display: flex;
@@ -484,19 +490,15 @@ input[type="checkbox"]:checked ~ .aside{
 .aside__info-contacts-tel:hover,
 .aside__info-contacts-email:hover,
 .aside__menu-link:hover{
-    
     color: #41F6D7;
-
 }
+
 .aside__lang-item:active,
 .aside__info-contacts-tel:active,
 .aside__info-contacts-email:active,
 .aside__menu-link:active{
     color: #7E7E82;
 }
-
-
-
 
 @media (min-width:768px) {
 
@@ -529,11 +531,15 @@ input[type="checkbox"]:checked ~ .aside{
     .content__main-text {
         margin-right: 40px;
         min-width: 312px;
-
     }
 
-    
+    .aside__logo{
+        padding: 16px 10% 0px 0px;
+    }
 
+    .repair {
+        margin-left: 40px;
+    }
 
     .repair::before {
         content: " ";
@@ -544,17 +550,7 @@ input[type="checkbox"]:checked ~ .aside{
         top: 28px;
         right: 130px;  
     }
-
-    .aside__logo{
-        padding: 16px 10% 0px 0px;
-    }
-
-    .repair {
-        margin-left: 40px;
-
-    }
     
-
     .dis-md,
     .title_dis-md,
     .content__main-text_dis-md {
@@ -565,18 +561,11 @@ input[type="checkbox"]:checked ~ .aside{
         display: none;
     }
 
-
-
     .content {
         flex-direction: row;
         align-items: start;
         justify-content: start;
     }
-
-
-
-
-
 }
 
 @media (min-width:1440px) {
@@ -586,9 +575,6 @@ input[type="checkbox"]:checked ~ .aside{
        width: 1440px;
     }
 
-    
-    
-
     .header,
     .item_dis-md,
     .content__main-text_dis-md,
@@ -596,8 +582,6 @@ input[type="checkbox"]:checked ~ .aside{
     .close.aside__header-bottom {
         display: none;
     }
-
-   
 
     .checkstatus {
         margin-right: 0;
@@ -619,7 +603,6 @@ input[type="checkbox"]:checked ~ .aside{
     .main-navigation{
         padding-right: 70px;
     }
-
 
     .content__main-text_dis-lg,
     .dis-lg,
@@ -646,8 +629,6 @@ input[type="checkbox"]:checked ~ .aside{
         font-family: 'TT Lakes Condensed';
     }
 
-
-
     .title {
         margin-bottom: 8px;
     }
@@ -658,7 +639,6 @@ input[type="checkbox"]:checked ~ .aside{
         width: 0;
     }
 
-
     .main-navigation__title {
         text-decoration: none;
         font-family: 'TT Lakes';
@@ -666,8 +646,6 @@ input[type="checkbox"]:checked ~ .aside{
         color: #1B1C21;
         background-image: none;
         padding-left: 50px;
-
-
     }
 
     .main-navigation__title.repair::after {
@@ -727,10 +705,7 @@ input[type="checkbox"]:checked ~ .aside{
 
     .modal{
         overflow: visible;
-        width: 414px ;
+        width: 440px ;
     }
-    
-    
-
 
 }
