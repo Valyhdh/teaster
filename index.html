@@ -13,9 +13,9 @@
         <div class="header-page">
             <section class="header-basic">
                 <nav class="header-basic__navigation header-navigation">
-                    
-                    <button class="header-navigation__title burger bottom burger-db" id="Burger" onmousedown="viewDiv()"></button>
-                    
+                    <button class="header-navigation__title burger bottom burger-db" id="Burger">
+
+                    </button>
                 </nav>
                 <div class="header-basic__logo">
                     <img src="img/header_img/logo.svg" alt="логотип">
@@ -42,18 +42,24 @@
     </header>
     <section class="feedback modal" id="feedback">
         <div class="feedback__header modal__header --modal">
-        <button id="FeedbackDis" class="modal__close bottom close feedback-dn --modal"></button>
-        <h2 class="feedback__title title modal__title --modal">Обратная связь</h2>
-    </div>
+            <button id="FeedbackDis" class="modal__close bottom close feedback-dn --modal"></button>
+            <h2 class="feedback__title title modal__title --modal">Обратная связь</h2>
+        </div>
         <form action="" method="" class="feedback__form modal__form --modal">
-        <fieldset class="feedback__form-title modal__form-title --modal">
-        <input type="text" id="NameFeedback" required placeholder="Имя" class="feedback__form-item modal__form-item --modal">
-        <input type="tel" name="TelFeedback" id="TelFeedback" required placeholder="Телефон" class="feedback__form-item modal__form-item --modal">
-        <input type="email" name="EmailFeedback" id="EmailFeedback" required placeholder="Электронная почта" class="feedback__form-item modal__form-item --modal">
-        <input type="text" placeholder="Сообщение" class="feedback__form-item feedback__form-item_message modal__form-item --modal">
-        </fieldset>
-        <p class="feedback__description modal__description --modal">Нажимая “отправить”, вы даете согласие на <a href="" class="modal__description-link --modal">обработку персональных данных</a> и соглашаетесь с нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a></p>
-        <button type="submit" class="feedback__button modal__button --modal">ОТПРАВИТЬ</button>
+            <fieldset class="feedback__form-title modal__form-title --modal">
+                <input type="text" id="NameFeedback" required placeholder="Имя"
+                    class="feedback__form-item modal__form-item --modal">
+                <input type="tel" name="TelFeedback" id="TelFeedback" required placeholder="Телефон"
+                    class="feedback__form-item modal__form-item --modal">
+                <input type="email" name="EmailFeedback" id="EmailFeedback" required placeholder="Электронная почта"
+                    class="feedback__form-item modal__form-item --modal">
+                <input type="text" placeholder="Сообщение"
+                    class="feedback__form-item feedback__form-item_message modal__form-item --modal">
+            </fieldset>
+            <p class="feedback__description modal__description --modal">Нажимая “отправить”, вы даете согласие на <a
+                    href="" class="modal__description-link --modal">обработку персональных данных</a> и соглашаетесь с
+                нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a></p>
+            <button type="submit" class="feedback__button modal__button --modal">ОТПРАВИТЬ</button>
         </form>
     </section>
     <section class="ordercall modal" id="ordercall">
@@ -61,247 +67,271 @@
             <button id="OrdercallDis" class="modal__close bottom close ordercall-dn --modal"></button>
             <h2 class="ordercall__title title modal__title --modal">Заказать звонок</h2>
         </div>
-            <form action="" method="" class="ordercall__form modal__form --modal">
-                <fieldset class="ordercall__form-title modal__form-title --modal">
-                <input type="text" id="NameOrdercall" required placeholder="Имя" class="ordercall__form-item modal__form-item --modal">
+        <form action="" method="" class="ordercall__form modal__form --modal">
+            <fieldset class="ordercall__form-title modal__form-title --modal">
+                <input type="text" id="NameOrdercall" required placeholder="Имя"
+                    class="ordercall__form-item modal__form-item --modal">
             </fieldset>
-            <p class="ordercall__description modal__description --modal">Нажимая “отправить”, вы даете согласие на <a href="" class="modal__description-link --modal">обработку персональных данных</a> и соглашаетесь с нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a></p>
-        <button type="submit" class="ordercall__button modal__button --modal">ОТПРАВИТЬ</button>
-            </form>
+            <p class="ordercall__description modal__description --modal">Нажимая “отправить”, вы даете согласие на <a
+                    href="" class="modal__description-link --modal">обработку персональных данных</a> и соглашаетесь с
+                нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a></p>
+            <button type="submit" class="ordercall__button modal__button --modal">ОТПРАВИТЬ</button>
+        </form>
     </section>
-    <div class="content__main-page">
-    <aside class="aside" id="aside">
-        <div class="aside__header-nav --modal">
-            <section class="aside__header --modal">
-                <button class="aside__header-bottom bottom close Burger_dn --modal" id="BurgerDis"></button>
-                <img src="img/header_img/logo.svg" alt="" class="aside__logo --modal">
-                <button class="aside__header-bottom bottom search --modal"></button>
-            </section>
-            <section class="aside__navigation --modal">
-                <input type="radio" name="conects" id="in1" class="--modal">
-                <label for="in1" class="aside__menu-link --modal">
-                    Ремонт техники
-                </label>
-                <input type="radio" name="conects" id="in2" class="--modal">
-                <label for="in2" class="aside__menu-link --modal">
-                    Услуги и сервисы
-                </label>
-                <input type="radio" name="conects" id="in3" class="--modal">
-                <label for="in3" class="aside__menu-link --modal">
-                    Корпоративным клиентам
-                </label>
-                <input type="radio" name="conects" id="in4" class="--modal">
-                <label for="in4" class="aside__menu-link --modal">
-                    Продавцам техники
-                </label>
-                <input type="radio" name="conects" id="in5" class="--modal">
-                <label for="in5" class="aside__menu-link --modal">
-                    Партнерам
-                </label>
-                <input type="radio" name="conects" id="in6" class="--modal">
-                <label for="in6" class="aside__menu-link --modal">
-                    Производителям
-                </label>
-                <input type="radio" name="conects" id="in7" class="--modal">
-                <label for="in7" class="aside__menu-link --modal">
-                    Наши сервисные центры
-                </label>
-                <input type="radio" name="conects" id="in8" class="--modal">
-                <label for="in8" class="aside__menu-link --modal">
-                    Контакты
-                </label>
-            </section>
-        </div>
-        <div class="aside__footer-nav">
-            <section class="aside__info --modal">
-                <nav class="aside__info-navigation --modal">
-                    <a href="#" class="aside-navigation__title call bottom feedback-db" id="Feedback2">
+    <div class="aside__page aside__page_lg">
+        <aside class="aside" id="aside">
+            <div class="aside__header-nav --modal">
+                <section class="aside__header --modal">
+                    <button class="aside__header-bottom bottom close Burger_dn --modal" id="BurgerDis"></button>
+                    <img src="img/header_img/logo.svg" alt="" class="aside__logo --modal">
+                    <button class="aside__header-bottom bottom search --modal"></button>
+                </section>
+                <section class="aside__navigation --modal">
+                    <input type="radio" name="conects" id="in1" class="--modal">
+                    <label for="in1" class="aside__menu-link --modal">
+                        Ремонт техники
+                    </label>
+                    <input type="radio" name="conects" id="in2" class="--modal">
+                    <label for="in2" class="aside__menu-link --modal">
+                        Услуги и сервисы
+                    </label>
+                    <input type="radio" name="conects" id="in3" class="--modal">
+                    <label for="in3" class="aside__menu-link --modal">
+                        Корпоративным клиентам
+                    </label>
+                    <input type="radio" name="conects" id="in4" class="--modal">
+                    <label for="in4" class="aside__menu-link --modal">
+                        Продавцам техники
+                    </label>
+                    <input type="radio" name="conects" id="in5" class="--modal">
+                    <label for="in5" class="aside__menu-link --modal">
+                        Партнерам
+                    </label>
+                    <input type="radio" name="conects" id="in6" class="--modal">
+                    <label for="in6" class="aside__menu-link --modal">
+                        Производителям
+                    </label>
+                    <input type="radio" name="conects" id="in7" class="--modal">
+                    <label for="in7" class="aside__menu-link --modal">
+                        Наши сервисные центры
+                    </label>
+                    <input type="radio" name="conects" id="in8" class="--modal">
+                    <label for="in8" class="aside__menu-link --modal">
+                        Контакты
+                    </label>
+                </section>
+            </div>
+            <div class="aside__footer-nav">
+                <section class="aside__info --modal">
+                    <nav class="aside__info-navigation --modal">
+                        <a href="#" class="aside-navigation__title call bottom feedback-db" id="Feedback2">
 
-                    </a>
-                    <a href="#" class="aside-navigation__title chat bottom ordercall-db" id="Ordercall2">
+                        </a>
+                        <a href="#" class="aside-navigation__title chat bottom ordercall-db" id="Ordercall2">
 
-                    </a>
-                    <a href="#" class="aside-navigation__title profile bottom">
+                        </a>
+                        <a href="#" class="aside-navigation__title profile bottom">
 
+                        </a>
+                    </nav>
+                    <div class="aside__info-contacts --modal">
+                        <a href="mailto:mail@cps.com" class="aside__info-contacts-email --modal">mail@cps.com</a>
+                        <a href="tel:" class="aside__info-contacts-tel --modal">8 800 890 8900</a>
+                    </div>
+                    <form class="aside__lang-title --modal">
+                        <input type="radio" name="lang" id="ru" class="--modal">
+                        <label for="ru" class="aside__lang-item --modal">
+                            RU
+                        </label>
+                        <input type="radio" name="lang" id="en" class="--modal">
+                        <label for="en" class="aside__lang-item --modal">
+                            EN
+                        </label>
+                        <input type="radio" name="lang" id="ch" class="--modal">
+                        <label for="ch" class="aside__lang-item --modal">
+                            CH
+                        </label>
+                    </form>
+                </section>
+            </div>
+        </aside>
+        <div class="content__page">
+            <main class="main">
+                <article class="main__header">
+                    <div class="main-page">
+                        <h1 class="title">Услуги и сервисы</h1>
+                        <nav class="main-navigation nav_dis-lg-flex">
+                            <a href="#" class="main-navigation__title item_dis-lg repair">
+                                Оставить заявку
+                            </a>
+                            <a href="#" class="main-navigation__title item_dis-lg checkstatus">
+                                Статус ремонт
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="scrollbar">
+                        <p class="scrollbar__menu-item">
+                            <a href="#" class="scrollbar__menu-link">Ремонтируемые бренды</a>
+                        </p>
+                        <p class="scrollbar__menu-item">
+                            <a href="#" class="scrollbar__menu-link">Ремонтируемые устройства</a>
+                        </p>
+                        <p class="scrollbar__menu-item">
+                            <a href="#" class="scrollbar__menu-link">Цены на услуги</a>
+                        </p>
+                        <p class="scrollbar__menu-item">
+                            <a href="#" class="scrollbar__menu-link">Адреса сервисных центров</a>
+                        </p>
+                        <p class="scrollbar__menu-item">
+                            <a href="#" class="scrollbar__menu-link">Дополнительные на услуги</a>
+                        </p>
+                        <p class="scrollbar__menu-item">
+                            <a href="#" class="scrollbar__menu-link">Специальные цены</a>
+                        </p>
+                        <p class="scrollbar__menu-item">
+                            <a href="#" class="scrollbar__menu-link">Отзывы</a>
+                        </p>
+                    </div>
+
+                    <article class="content">
+                        <section class="content__text">
+                            <p class="content__main-text_dis-sm content__main-text">
+                                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+                                можете
+                                отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                            </p>
+                            <p class="content__main-text_dis-md content__main-text">
+                                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+                                можете
+                                отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы
+                                успешно
+                                работаем
+                                с 1992 года и заслужили репутацию надежного партнера
+                            </p>
+                            <p class="content__main-text_dis-lg content__main-text">
+                                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+                                можете
+                                отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы
+                                успешно
+                                работаем
+                                с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                                количество
+                                постоянных
+                                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+                                советуют
+                                нас
+                                родным и близким.
+                            </p>
+                            <div class="content__more">
+                                <p class="content__more-info">Читать далее</p>
+
+                            </div>
+                        </section>
+                        <section class="content_img">
+                            <img src="img/main_img/logo.png" class="content-img" alt="Наша компания">
+                        </section>
+                    </article>
+                </article>
+            </main>
+            <footer class="footer">
+                <div class="footer__title">
+                    <a href="" class="footer__item footer__item_copy">
+                        © 2019 CPS
+                        <br>
+                        Разработано командой Apesong
                     </a>
-                </nav>
-                <div class="aside__info-contacts --modal">
-                    <a href="mailto:mail@cps.com" class="aside__info-contacts-email --modal">mail@cps.com</a>
-                    <a href="tel:" class="aside__info-contacts-tel --modal">8 800 890 8900</a>
+                    <a href="" class="footer__item footer__item_pol">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="" class="footer__item footer__item_info">
+                        Информация, размещенная на данной странице, не является публичной офертой
+                    </a>
                 </div>
-                <form class="aside__lang-title --modal">
-                    <input type="radio" name="lang" id="ru" class="--modal">
-                <label for="ru" class="aside__lang-item --modal">
-                    RU
-                </label>
-                <input type="radio" name="lang" id="en" class="--modal">
-                <label for="en" class="aside__lang-item --modal">
-                    EN
-                </label>
-                <input type="radio" name="lang" id="ch" class="--modal">
-                <label for="ch" class="aside__lang-item --modal">
-                    CH
-                </label>
-                </form>
-            </section>
+            </footer>
         </div>
-    </aside>
-    <main class="main">
-        <div class="main-page">
-            <h1 class="title">Услуги и сервисы</h1>
-            <nav class="main-navigation nav_dis-lg-flex">
-                <a href="#" class="main-navigation__title item_dis-lg repair">
-                    Оставить заявку
-                </a>
-                <a href="#" class="main-navigation__title item_dis-lg checkstatus">
-                    Статус ремонт
-                </a>
-            </nav>
-        </div>
-        <div class="scrollbar">
-            <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link">Ремонтируемые бренды</a>
-            </p>
-            <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link">Ремонтируемые устройства</a>
-            </p>
-            <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link">Цены на услуги</a>
-            </p>
-            <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link">Адреса сервисных центров</a>
-            </p>
-            <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link">Дополнительные на услуги</a>
-            </p>
-            <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link">Специальные цены</a>
-            </p>
-            <p class="scrollbar__menu-item">
-                <a href="#" class="scrollbar__menu-link">Отзывы</a>
-            </p>
-        </div>
+    </div>
 
-        <article class="content">
-            <section class="content__text">
-                <p class="content__main-text_dis-sm content__main-text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <p class="content__main-text_dis-md content__main-text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы успешно работаем
-                    с 1992 года и заслужили репутацию надежного партнера
-                </p>
-                <p class="content__main-text_dis-lg content__main-text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы успешно работаем
-                    с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных
-                    клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
-                    родным и близким.
-                </p>
-                <div class="content__more">
-                    <p class="content__more-info">Читать далее</p>
-
-                </div>
-            </section>
-            <section class="content_img">
-                <img src="img/main_img/logo.png" class="content-img" alt="Наша компания">
-            </section>
-            
-        </article>
-    </main>
-</div>
-    
     <script>
- 
+        document.querySelectorAll(".ordercall-db").forEach(button => {
+            button.addEventListener('click', function (event1) {
+                event1._isClick1 = true
+                console.log('1')
+                document.getElementById('ordercall').classList.toggle('--show');
+            })
+        });
+
+        document.body.addEventListener('click', function (event1) {
+            if (event1._isClick1 == true ||
+                event1.target.classList.contains('ordercall-db') == true ||
+                event1.target.classList.contains('ordercall') == true ||
+                event1.target.classList.contains('--modal') == true
+            ) return
+            console.log('вне блока орд')
+
+            document.querySelectorAll(".ordercall").forEach(ordercall => {
+                ordercall.classList.remove('--show')
+            })
+        });
 
 
 
+        document.querySelectorAll(".feedback-db").forEach(button => {
+            button.addEventListener('click', function (event2) {
+                event2._isClick2 = true
+                console.log('2')
+                document.getElementById('feedback').classList.toggle('--show');
+            })
+        });
+
+        document.body.addEventListener('click', function (event2) {
+            if (event2._isClick2 == true ||
+                event2.target.classList.contains('feedback-db') == true ||
+                event2.target.classList.contains('feedback') == true ||
+                event2.target.classList.contains('--modal') == true
+            ) return
+            console.log('вне блока фид')
+
+            document.querySelectorAll(".feedback").forEach(feedback => {
+                feedback.classList.remove('--show')
+            })
+        });
 
 
 
-document.querySelectorAll(".ordercall-db").forEach(button=>{
-    button.addEventListener('click', function(event1){
-        event1._isClick1 = true
-        console.log('1')
-        document.getElementById('ordercall').classList.toggle('--show');
-    })
-});
+        document.querySelectorAll(".burger-db").forEach(button => {
+            button.addEventListener('click', function (event3) {
+                event3._isClick3 = true
+                console.log('3')
+                document.getElementById('aside').classList.toggle('--show');
+            })
+        });
 
-document.body.addEventListener('click', function(event1) {
- if(event1._isClick1 == true ||
-    event1.target.classList.contains('ordercall-db') == true ||
-    event1.target.classList.contains('ordercall') == true ||
-    event1.target.classList.contains('--modal') == true
-) return
- console.log('вне блока орд')
+        document.body.addEventListener('click', function (event3) {
+            if (event3._isClick == true ||
+                event3.target.classList.contains('burger-db') == true ||
+                event3.target.classList.contains('aside') == true ||
+                event3.target.classList.contains('--modal') == true
+            ) return
+            console.log('вне блока бур')
 
- document.querySelectorAll(".ordercall").forEach(ordercall=>{
-    ordercall.classList.remove('--show')
-})
-});
-
-
-
-document.querySelectorAll(".feedback-db").forEach(button=>{
-    button.addEventListener('click', function(event2){
-        event2._isClick2 = true
-        console.log('2')
-        document.getElementById('feedback').classList.toggle('--show');
-    })
-});
-
-document.body.addEventListener('click', function(event2) {
- if(event2._isClick2 == true ||
-    event2.target.classList.contains('feedback-db') == true ||
-    event2.target.classList.contains('feedback') == true ||
-    event2.target.classList.contains('--modal') == true
-) return
- console.log('вне блока фид')
-
- document.querySelectorAll(".feedback").forEach(feedback=>{
-    feedback.classList.remove('--show')
-})
-});
+            document.querySelectorAll(".aside").forEach(feedback => {
+                feedback.classList.remove('--show')
+            })
+        });
 
 
 
+        document.getElementById('BurgerDis').addEventListener('click', function () {
+            document.getElementById('aside').classList.remove('--show');
+        });
 
-document.querySelectorAll(".burger-db").forEach(button=>{
-    button.addEventListener('click', function(event3){
-        event3._isClick3 = true
-        console.log('3')
-        document.getElementById('aside').classList.toggle('--show');
-    })
-});
+        document.getElementById('FeedbackDis').addEventListener('click', function () {
+            document.getElementById('feedback').classList.remove('--show');
+        });
 
-document.body.addEventListener('click', function(event3) {
- if(event3._isClick == true ||
-    event3.target.classList.contains('burger-db') == true ||
-    event3.target.classList.contains('aside') == true ||
-    event3.target.classList.contains('--modal') == true
-) return
- console.log('вне блока бур')
-
- document.querySelectorAll(".aside").forEach(feedback=>{
-    feedback.classList.remove('--show')
-})
-});
- 
-document.getElementById('BurgerDis').addEventListener('click', function(){ 
-  document.getElementById('aside').classList.remove('--show'); 
-}); 
- 
-document.getElementById('FeedbackDis').addEventListener('click', function(){ 
-  document.getElementById('feedback').classList.remove('--show'); 
-}); 
- 
-document.getElementById('OrdercallDis').addEventListener('click', function(){ 
-  document.getElementById('ordercall').classList.remove('--show'); 
-}); 
-
-
+        document.getElementById('OrdercallDis').addEventListener('click', function () {
+            document.getElementById('ordercall').classList.remove('--show');
+        });
     </script>
 </body>
 
