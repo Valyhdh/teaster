@@ -426,7 +426,7 @@ body {
     
 
 }
-.aside__menu-link {
+input[type="radio"]:checked + .aside__menu-link {
     color: #7E7E82;
     border-left:5px solid #41F6D7;
 }
@@ -436,10 +436,6 @@ input[type="radio"]:checked + .aside__lang-item{
 }
 
 input[type="radio"]{
-    display: none;
-}
-
-input[type="checkbox"]:checked ~ .aside{
     display: none;
 }
 
