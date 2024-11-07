@@ -25,7 +25,7 @@
                 <button class="header-navigation__title call bottom title_dis-md" id="Feedback">
 
                 </button>
-                <button class="header-navigation__title chat bottom title_dis-md">
+                <button class="header-navigation__title chat bottom title_dis-md" id="Ordercall">
 
                 </button>
                 <button class="header-navigation__title profile bottom title_dis-md">
@@ -56,8 +56,18 @@
         <button type="submit" class="feedback__button modal__button">ОТПРАВИТЬ</button>
         </form>
     </section>
-    <section>
-
+    <section class="ordercall modal" id="ordercall">
+        <div class="ordercall__header modal__header">
+            <button id="OrdercallDis" class="modal__close bottom close"></button>
+            <h2 class="ordercall__title modal__title">Заказать звонок</h2>
+        </div>
+            <form action="" method="" class="ordercall__form modal__form">
+                <fieldset class="ordercall__form-title modal__form-title">
+                <input type="text" id="NameOrdercall" required placeholder="Имя" class="ordercall__form-item modal__form-item">
+            </fieldset>
+            <p class="ordercall__description modal__description">Нажимая “отправить”, вы даете согласие на <a href="" class="modal__description-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="" class="modal__description-link">политикой конфиденциальности</a></p>
+        <button type="submit" class="ordercall__button modal__button">ОТПРАВИТЬ</button>
+            </form>
     </section>
     <div class="content__main-page">
     <aside class="aside" id="aside">
@@ -108,7 +118,7 @@
                     <a href="#" class="aside-navigation__title call bottom" id="Feedback2">
 
                     </a>
-                    <a href="#" class="aside-navigation__title chat bottom">
+                    <a href="#" class="aside-navigation__title chat bottom" id="Ordercall2">
 
                     </a>
                     <a href="#" class="aside-navigation__title profile bottom">
@@ -220,7 +230,9 @@ document.getElementById('BurgerDis').addEventListener('click', function(){
 
 
 document.getElementById('Feedback2').addEventListener('click', function(){
-  document.getElementById('feedback').classList.add('--show');
+  document.getElementById('feedback').classList.toggle('--show');
+  document.getElementById('aside').classList.remove('--show');
+  document.getElementById('ordercall').classList.remove('--show');
 });
 
 document.getElementById('FeedbackDis').addEventListener('click', function(){
@@ -230,9 +242,27 @@ document.getElementById('FeedbackDis').addEventListener('click', function(){
 
 document.getElementById('Feedback').addEventListener('click', function(){
   document.getElementById('feedback').classList.add('--show');
+  document.getElementById('aside').classList.remove('--show');
+  document.getElementById('ordercall').classList.remove('--show');
 });
 
 
+document.getElementById('Ordercall2').addEventListener('click', function(){
+  document.getElementById('ordercall').classList.toggle('--show');
+  document.getElementById('aside').classList.remove('--show');
+  document.getElementById('feedback').classList.remove('--show');
+});
+
+document.getElementById('OrdercallDis').addEventListener('click', function(){
+  document.getElementById('ordercall').classList.remove('--show');
+});
+
+
+document.getElementById('Ordercall').addEventListener('click', function(){
+  document.getElementById('ordercall').classList.add('--show');
+  document.getElementById('aside').classList.remove('--show');
+  document.getElementById('feedback').classList.remove('--show');
+});
 
 
     </script>

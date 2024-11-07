@@ -141,8 +141,9 @@ body {
 }
 
 .modal{
-    width:320px;
+    width:296px;
     height: 100%;
+    padding-right: 24px;
     display: flex;
     flex-direction: column;
     position:fixed;
@@ -150,9 +151,14 @@ body {
     right: 0;
     background-color: #ffffff;
     z-index: 2;
-    transition: all .5s linear;
+    transition: transform .3s linear;
     transform: translateX(120%);
     border-left:2px solid #D9FFF5;
+    overflow-y: auto;
+}
+
+.modal::-webkit-scrollbar{
+    display: none;
 }
 
 .modal.--show {
@@ -169,12 +175,12 @@ body {
 .modal__title {
     font-family: 'TT Lakes Condensed';
     font-weight: bold;
-    width: 288px;
     height: 40px;
     font-size: 28px;
     padding-left: 12px;
     border-left: 4px solid #41F6D7;
     margin-bottom: 10px;
+    margin-left: -2px;
 
 }
 
@@ -192,6 +198,7 @@ body {
     margin-bottom:16px;
     border: 1px solid #EAEAEA;
     border-radius: 8px;
+    
 }
 
 .modal__form-item::placeholder{
@@ -323,10 +330,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 10px 0px 52px 0px #9598a5;
-    transition: transform .5s linear;
+    transition: transform .3s linear;
     transform: translateX(-120%);
     background-color: #ffffff;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .aside.--show {
@@ -356,7 +363,7 @@ body {
     padding: 16px 62px 0px 0px;
 }
 
-.aside__bottom-nav {}
+
 
 .bottom{
     transition: transform 0.3s, opacity 0.3s;
@@ -419,9 +426,7 @@ input[type="radio"]{
 input[type="checkbox"]:checked ~ .aside{
     display: none;
 }
-.aside__info {
 
-}
 
 .aside__info-navigation {
     display: flex;
@@ -527,10 +532,8 @@ input[type="checkbox"]:checked ~ .aside{
 
     }
 
-    .modal__close{
-        position: absolute ;
-        right: 340px;
-    }
+    
+
 
     .repair::before {
         content: " ";
@@ -550,6 +553,7 @@ input[type="checkbox"]:checked ~ .aside{
         margin-left: 40px;
 
     }
+    
 
     .dis-md,
     .title_dis-md,
@@ -715,6 +719,16 @@ input[type="checkbox"]:checked ~ .aside{
         margin-bottom: 0;
     }
 
+    
+    .modal__close{
+        position: absolute ;
+        right: 460px; 
+    }
+
+    .modal{
+        overflow: visible;
+        width: 414px ;
+    }
     
     
 
