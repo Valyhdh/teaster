@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>CPS</title>
 </head>
 
@@ -13,7 +14,7 @@
         <div class="header-page">
             <section class="header-basic">
                 <nav class="header-basic__navigation header-navigation">
-                    <button class="header-navigation__title burger bottom burger-db" id="Burger">
+                    <button class="header-navigation__title burger bottom aside-db" id="Burger">
 
                     </button>
                 </nav>
@@ -40,82 +41,44 @@
             </nav>
         </div>
     </header>
-    <section class="feedback modal" id="feedback">
-        <div class="feedback__header modal__header --modal">
-            <button id="FeedbackDis" class="modal__close bottom close feedback-dn --modal"></button>
-            <h2 class="feedback__title title modal__title --modal">Обратная связь</h2>
-        </div>
-        <form action="" method="" class="feedback__form modal__form --modal">
-            <fieldset class="feedback__form-title modal__form-title --modal">
-                <input type="text" id="NameFeedback" required placeholder="Имя"
-                    class="feedback__form-item modal__form-item --modal">
-                <input type="tel" name="TelFeedback" id="TelFeedback" required placeholder="Телефон"
-                    class="feedback__form-item modal__form-item --modal">
-                <input type="email" name="EmailFeedback" id="EmailFeedback" required placeholder="Электронная почта"
-                    class="feedback__form-item modal__form-item --modal">
-                <input type="text" placeholder="Сообщение"
-                    class="feedback__form-item feedback__form-item_message modal__form-item --modal">
-            </fieldset>
-            <p class="feedback__description modal__description --modal">Нажимая “отправить”, вы даете согласие на <a
-                    href="" class="modal__description-link --modal">обработку персональных данных</a> и соглашаетесь с
-                нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a></p>
-            <button type="submit" class="feedback__button modal__button --modal">ОТПРАВИТЬ</button>
-        </form>
-    </section>
-    <section class="ordercall modal" id="ordercall">
-        <div class="ordercall__header modal__header --modal">
-            <button id="OrdercallDis" class="modal__close bottom close ordercall-dn --modal"></button>
-            <h2 class="ordercall__title title modal__title --modal">Заказать звонок</h2>
-        </div>
-        <form action="" method="" class="ordercall__form modal__form --modal">
-            <fieldset class="ordercall__form-title modal__form-title --modal">
-                <input type="text" id="NameOrdercall" required placeholder="Имя"
-                    class="ordercall__form-item modal__form-item --modal">
-            </fieldset>
-            <p class="ordercall__description modal__description --modal">Нажимая “отправить”, вы даете согласие на <a
-                    href="" class="modal__description-link --modal">обработку персональных данных</a> и соглашаетесь с
-                нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a></p>
-            <button type="submit" class="ordercall__button modal__button --modal">ОТПРАВИТЬ</button>
-        </form>
-    </section>
-    <div class="aside__page aside__page_lg">
+    <div class="mainer-page mainer-page_lg">
         <aside class="aside" id="aside">
             <div class="aside__header-nav --modal">
                 <section class="aside__header --modal">
-                    <button class="aside__header-bottom bottom close Burger_dn --modal" id="BurgerDis"></button>
-                    <img src="img/header_img/logo.svg" alt="" class="aside__logo --modal">
+                    <button class="aside__header-bottom bottom close aside_dn --modal" id="BurgerDis"></button>
+                    <img src="img/header_img/logo.svg" alt="логотип" class="aside__logo --modal">
                     <button class="aside__header-bottom bottom search --modal"></button>
                 </section>
                 <section class="aside__navigation --modal">
-                    <input type="radio" name="conects" id="in1" class="--modal">
+                    <input type="radio" name="conects" id="in1" class="aside__menu-item --modal">
                     <label for="in1" class="aside__menu-link --modal">
                         Ремонт техники
                     </label>
-                    <input type="radio" name="conects" id="in2" class="--modal">
+                    <input type="radio" name="conects" id="in2" class="aside__menu-item --modal">
                     <label for="in2" class="aside__menu-link --modal">
                         Услуги и сервисы
                     </label>
-                    <input type="radio" name="conects" id="in3" class="--modal">
+                    <input type="radio" name="conects" id="in3" class="aside__menu-item --modal">
                     <label for="in3" class="aside__menu-link --modal">
                         Корпоративным клиентам
                     </label>
-                    <input type="radio" name="conects" id="in4" class="--modal">
+                    <input type="radio" name="conects" id="in4" class="aside__menu-item --modal">
                     <label for="in4" class="aside__menu-link --modal">
                         Продавцам техники
                     </label>
-                    <input type="radio" name="conects" id="in5" class="--modal">
+                    <input type="radio" name="conects" id="in5" class="aside__menu-item --modal">
                     <label for="in5" class="aside__menu-link --modal">
                         Партнерам
                     </label>
-                    <input type="radio" name="conects" id="in6" class="--modal">
+                    <input type="radio" name="conects" id="in6" class="aside__menu-item --modal">
                     <label for="in6" class="aside__menu-link --modal">
                         Производителям
                     </label>
-                    <input type="radio" name="conects" id="in7" class="--modal">
+                    <input type="radio" name="conects" id="in7" class="aside__menu-item --modal">
                     <label for="in7" class="aside__menu-link --modal">
                         Наши сервисные центры
                     </label>
-                    <input type="radio" name="conects" id="in8" class="--modal">
+                    <input type="radio" name="conects" id="in8" class="aside__menu-item --modal">
                     <label for="in8" class="aside__menu-link --modal">
                         Контакты
                     </label>
@@ -124,13 +87,13 @@
             <div class="aside__footer-nav">
                 <section class="aside__info --modal">
                     <nav class="aside__info-navigation --modal">
-                        <a href="#" class="aside-navigation__title call bottom feedback-db" id="Feedback2">
+                        <a href="#" class="aside__info-item call bottom feedback-db" id="Feedback2">
 
                         </a>
-                        <a href="#" class="aside-navigation__title chat bottom ordercall-db" id="Ordercall2">
+                        <a href="#" class="aside__info-item chat bottom ordercall-db" id="Ordercall2">
 
                         </a>
-                        <a href="#" class="aside-navigation__title profile bottom">
+                        <a href="#" class="aside__info-item profile bottom">
 
                         </a>
                     </nav>
@@ -139,16 +102,16 @@
                         <a href="tel:" class="aside__info-contacts-tel --modal">8 800 890 8900</a>
                     </div>
                     <form class="aside__lang-title --modal">
-                        <input type="radio" name="lang" id="ru" class="--modal">
-                        <label for="ru" class="aside__lang-item --modal">
+                        <input type="radio" name="lang" id="ru" class="aside__lang-item --modal">
+                        <label for="ru" class="aside__lang-link --modal">
                             RU
                         </label>
-                        <input type="radio" name="lang" id="en" class="--modal">
-                        <label for="en" class="aside__lang-item --modal">
+                        <input type="radio" name="lang" id="en" class="aside__lang-item --modal">
+                        <label for="en" class="aside__lang-link --modal">
                             EN
                         </label>
-                        <input type="radio" name="lang" id="ch" class="--modal">
-                        <label for="ch" class="aside__lang-item --modal">
+                        <input type="radio" name="lang" id="ch" class="aside__lang-item --modal">
+                        <label for="ch" class="aside__lang-link --modal">
                             CH
                         </label>
                     </form>
@@ -157,6 +120,48 @@
         </aside>
         <div class="content__page">
             <main class="main">
+                <section class="feedback modal" id="feedback">
+                    <div class="feedback__header modal__header --modal">
+                        <button id="FeedbackDis" class="modal__close bottom close feedback-dn --modal"></button>
+                        <h2 class="feedback__title title modal__title --modal">Обратная связь</h2>
+                    </div>
+                    <form action="" method="" class="feedback__form modal__form --modal">
+                        <fieldset class="feedback__form-title modal__form-title --modal">
+                            <input type="text" id="NameFeedback" required placeholder="Имя"
+                                class="feedback__form-item modal__form-item --modal">
+                            <input type="tel" name="TelFeedback" id="TelFeedback" required placeholder="Телефон"
+                                class="feedback__form-item modal__form-item --modal">
+                            <input type="email" name="EmailFeedback" id="EmailFeedback" required
+                                placeholder="Электронная почта" class="feedback__form-item modal__form-item --modal">
+                            <input type="text" placeholder="Сообщение"
+                                class="feedback__form-item feedback__form-item_message modal__form-item --modal">
+                        </fieldset>
+                        <p class="feedback__description modal__description --modal">Нажимая “отправить”, вы даете
+                            согласие на <a href="" class="modal__description-link --modal">обработку персональных
+                                данных</a> и соглашаетесь с
+                            нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a>
+                        </p>
+                        <button type="submit" class="feedback__button modal__button --modal">ОТПРАВИТЬ</button>
+                    </form>
+                </section>
+                <section class="ordercall modal" id="ordercall">
+                    <div class="ordercall__header modal__header --modal">
+                        <button id="OrdercallDis" class="modal__close bottom close ordercall-dn --modal"></button>
+                        <h2 class="ordercall__title title modal__title --modal">Заказать звонок</h2>
+                    </div>
+                    <form action="" method="" class="ordercall__form modal__form --modal">
+                        <fieldset class="ordercall__form-title modal__form-title --modal">
+                            <input type="text" id="NameOrdercall" required placeholder="Имя"
+                                class="ordercall__form-item modal__form-item --modal">
+                        </fieldset>
+                        <p class="ordercall__description modal__description --modal">Нажимая “отправить”, вы даете
+                            согласие на <a href="" class="modal__description-link --modal">обработку персональных
+                                данных</a> и соглашаетесь с
+                            нашей <a href="" class="modal__description-link --modal">политикой конфиденциальности</a>
+                        </p>
+                        <button type="submit" class="ordercall__button modal__button --modal">ОТПРАВИТЬ</button>
+                    </form>
+                </section>
                 <article class="main__header">
                     <div class="main-page">
                         <h1 class="title">Услуги и сервисы</h1>
@@ -231,7 +236,7 @@
                             <img src="img/main_img/logo.png" class="content-img" alt="Наша компания">
                         </section>
                     </article>
-                </article>
+                    </artile>
             </main>
             <footer class="footer">
                 <div class="footer__title">
@@ -250,89 +255,105 @@
             </footer>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll(".ordercall-db").forEach(button => {
-            button.addEventListener('click', function (event1) {
-                event1._isClick1 = true
-                console.log('1')
-                document.getElementById('ordercall').classList.toggle('--show');
-            })
-        });
-
-        document.body.addEventListener('click', function (event1) {
-            if (event1._isClick1 == true ||
-                event1.target.classList.contains('ordercall-db') == true ||
-                event1.target.classList.contains('ordercall') == true ||
-                event1.target.classList.contains('--modal') == true
-            ) return
-            console.log('вне блока орд')
-
-            document.querySelectorAll(".ordercall").forEach(ordercall => {
-                ordercall.classList.remove('--show')
-            })
-        });
-
-
-
-        document.querySelectorAll(".feedback-db").forEach(button => {
-            button.addEventListener('click', function (event2) {
-                event2._isClick2 = true
-                console.log('2')
-                document.getElementById('feedback').classList.toggle('--show');
-            })
-        });
-
-        document.body.addEventListener('click', function (event2) {
-            if (event2._isClick2 == true ||
-                event2.target.classList.contains('feedback-db') == true ||
-                event2.target.classList.contains('feedback') == true ||
-                event2.target.classList.contains('--modal') == true
-            ) return
-            console.log('вне блока фид')
-
-            document.querySelectorAll(".feedback").forEach(feedback => {
-                feedback.classList.remove('--show')
-            })
-        });
-
-
-
-        document.querySelectorAll(".burger-db").forEach(button => {
-            button.addEventListener('click', function (event3) {
-                event3._isClick3 = true
-                console.log('3')
-                document.getElementById('aside').classList.toggle('--show');
-            })
-        });
-
-        document.body.addEventListener('click', function (event3) {
-            if (event3._isClick == true ||
-                event3.target.classList.contains('burger-db') == true ||
-                event3.target.classList.contains('aside') == true ||
-                event3.target.classList.contains('--modal') == true
-            ) return
-            console.log('вне блока бур')
-
-            document.querySelectorAll(".aside").forEach(feedback => {
-                feedback.classList.remove('--show')
-            })
-        });
-
-
-
-        document.getElementById('BurgerDis').addEventListener('click', function () {
-            document.getElementById('aside').classList.remove('--show');
-        });
-
-        document.getElementById('FeedbackDis').addEventListener('click', function () {
-            document.getElementById('feedback').classList.remove('--show');
-        });
-
-        document.getElementById('OrdercallDis').addEventListener('click', function () {
-            document.getElementById('ordercall').classList.remove('--show');
-        });
-    </script>
 </body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+    const mainPage = document.querySelector(".mainer-page");
+
+    const ordercallDb = document.querySelectorAll(".ordercall-db");
+    const ordercallDn = document.querySelectorAll(".ordercall-dn");
+    const ordercall = document.querySelector('.ordercall');
+
+    const feedbackDb = document.querySelectorAll(".feedback-db");
+    const feedbackDn = document.querySelectorAll(".feedback-dn");
+    const feedback = document.querySelector('.feedback');
+
+    const asideDb = document.querySelectorAll(".aside-db");
+    const asideDn = document.querySelectorAll(".aside-dn");
+    const aside = document.querySelector('.aside');
+
+    ordercallDb.forEach(button => {
+        button.addEventListener('click', function (eventOc) {
+            eventOc._isClickOc;
+            ordercall.classList.toggle('modal--show');
+        })
+    });
+
+    mainPage.addEventListener('click', function (eventOc) {
+        if (eventOc._isClickOc ||
+            eventOc.target.classList.contains('ordercall-db') ||
+            eventOc.target.classList.contains('ordercall') ||
+            eventOc.target.classList.contains('--modal')
+        ) return
+
+
+        document.querySelectorAll(".ordercall").forEach(ordercall => {
+            ordercall.classList.remove('modal--show')
+        })
+    });
+
+
+
+
+    feedbackDb.forEach(button => {
+        button.addEventListener('click', function (eventFb) {
+            eventFb._isClickFb;
+            feedback.classList.toggle('modal--show');
+        })
+    });
+
+    mainPage.addEventListener('click', function (eventFb) {
+        if (eventFb._isClickFb ||
+            eventFb.target.classList.contains('feedback-db') ||
+            eventFb.target.classList.contains('feedback') ||
+            eventFb.target.classList.contains('--modal') 
+        ) return
+
+        document.querySelectorAll(".feedback").forEach(feedback => {
+            feedback.classList.remove('modal--show')
+        })
+    });
+
+
+
+    asideDb.forEach(button => {
+        button.addEventListener('click', function (eventAside) {
+            eventAside._isClickAside;
+            aside.classList.toggle('aside--show');
+        })
+    });
+
+    mainPage.addEventListener('click', function (eventAside) {
+        if (eventAside._isClickAside  ||
+            eventAside.target.classList.contains('burger-db')  ||
+            eventAside.target.classList.contains('aside')  ||
+            eventAside.target.classList.contains('--modal') 
+        ) return
+        
+
+        document.querySelectorAll(".aside").forEach(feedback => {
+            feedback.classList.remove('aside--show')
+        })
+    });
+
+
+
+    document.querySelector('#BurgerDis').addEventListener('click', function () {
+        aside.classList.remove('aside--show');
+    });
+
+    document.querySelector('#FeedbackDis').addEventListener('click', function () {
+        feedback.classList.remove('modal--show');
+    });
+
+    document.querySelector('#OrdercallDis').addEventListener('click', function () {
+        ordercall.classList.remove('modal--show');
+    });
+
+
+</script>
 
 </html>
