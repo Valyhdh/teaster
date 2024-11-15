@@ -627,14 +627,13 @@ body {
 
 @media (min-width:1440px) {
 
-    .mainer-page {
+    .main,
+    .footer {
         margin: 0 auto;
         max-width: 1440px;
     }
 
-    .content__page {
-        width: 1120px;
-    }
+    
 
     .header,
     .item_dis-md,
@@ -737,7 +736,7 @@ body {
         display: flex;
         box-shadow: none;
         position: static;
-        margin-top: 15px;
+        padding: 15px;
         min-width: 250px;
         transform: translate(0);
         transition: none;

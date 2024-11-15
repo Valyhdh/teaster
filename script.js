@@ -15,12 +15,16 @@ const mainPage = document.querySelector(".mainer-page");
     const feedback = document.querySelector('.feedback');
     const feedbackOverlay = document.querySelectorAll('.feedback');
 
+
     const asideDb = document.querySelectorAll(".aside-db");
     const asideDisb = document.querySelector(".aside-db");
     const asideDn = document.querySelectorAll(".aside-dn");
     const asideDisn = document.querySelector(".aside-dn");
     const aside = document.querySelector('.aside');
     const asideOverlay = document.querySelectorAll('.aside');
+
+
+
 
     ordercallDb.forEach(button => {
         button.addEventListener('click', function (eventOc) {
@@ -33,7 +37,7 @@ const mainPage = document.querySelector(".mainer-page");
         if (eventOc._isClickOc ||
             eventOc.target.classList.contains('ordercall-db') ||
             eventOc.target.classList.contains('ordercall') ||
-            eventOc.target.classList.contains('overlay--modal')
+            eventOc.target.classList.contains('ordercall__element')
         ) return
 
 
@@ -56,7 +60,7 @@ const mainPage = document.querySelector(".mainer-page");
         if (eventFb._isClickFb ||
             eventFb.target.classList.contains('feedback-db') ||
             eventFb.target.classList.contains('feedback') ||
-            eventFb.target.classList.contains('overlay--modal') 
+            eventFb.target.classList.contains('feedback__element') 
         ) return
 
         feedbackOverlay.forEach(feedback => {
@@ -77,7 +81,7 @@ const mainPage = document.querySelector(".mainer-page");
         if (eventAside._isClickAside  ||
             eventAside.target.classList.contains('burger-db')  ||
             eventAside.target.classList.contains('aside')  ||
-            eventAside.target.classList.contains('overlay--modal') 
+            eventAside.target.classList.contains('aside__element') 
         ) return
         
 
@@ -100,3 +104,4 @@ const mainPage = document.querySelector(".mainer-page");
         ordercall.classList.remove('modal--show');
     });
 
+    
