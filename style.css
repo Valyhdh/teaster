@@ -83,7 +83,7 @@ body {
 
 .header {
     height: 88px;
-    padding-bottom: 24px;
+
 }
 
 .header-page {
@@ -150,6 +150,7 @@ body {
     transform: translateX(-120%);
     background-color: #ffffff;
     overflow-y: auto;
+    z-index: 2;
 }
 
 .aside--show {
@@ -216,8 +217,6 @@ body {
     line-height: 50px;
     margin: 0;
     transition: color 0.3s, border 0.3s;
-
-
 }
 
 .aside__menu-item:checked+.aside__menu-link {
@@ -436,12 +435,15 @@ body {
     border-bottom: 1px solid #D9FFF5;
 }
 
+.main__header {
+    background-color:#f8f8f8;
+    padding-top: 24px;
+}
+
 .scrollbar {
     display: flex;
     overflow-x: auto;
     padding-left: 16px;
-
-
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -510,6 +512,104 @@ body {
     margin-left: 16px;
 }
 
+.swiper-img__brend {
+    width: 240px;
+    height: 72px;
+    background-color: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    transition: transform .5s
+}
+
+.swiper-img__brend:hover{
+    transform: scale(0.9);
+}
+
+.swiper-img__brend::after{
+    content: url(img/main_img/go.svg);
+    position: absolute;
+    left:185px;
+    top: 15px;
+}
+
+.swiper-img__brend_lenovo::before{
+    content: url(img/main_img/lenovo.svg);
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.swiper-img__brend_samsung::before{
+    content: url(img/main_img/samsung.svg);
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.swiper-img__brend_apple::before{
+    content: url(img/main_img/apple.svg);
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.swiper-img__brend_viewsonic::before{
+    content: url(img/main_img/viewsonic.svg);
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+
+.swiper-img__brend_bosch::before{
+    content: url(img/main_img/bosch.svg);
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.swiper-img__brend_hp::before{
+    content: url(img/main_img/hp.svg);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.swiper-img__brend_acer::before{
+    content: url(img/main_img/acer.svg);
+    position: absolute;
+    left: 10px;
+    top: 22px;
+}
+
+.swiper-img__brend_sony::before{
+    content: url(img/main_img/sony.svg);
+    position: absolute;
+    left: 10px;
+    top: 22px;
+}
+
+.repair-brends__title{
+    text-transform: uppercase;
+    font-family: "TT Lakes Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+    color: #7E7E82;
+}
+
+.swiper{
+    height: 110px;
+    padding-left: 16px;
+}
+
+.swiper-pagination-bullet{
+background-color: #B5B6BC;
+width: 12px;
+height: 12px;
+}
+
 .footer__title {
     display: flex;
     flex-direction: column;
@@ -574,7 +674,7 @@ body {
         margin-left: 40px;
     }
 
-    .repair::before {
+    .header-navigation::before {
         content: " ";
         background: #EAEAEA;
         width: 2px;
@@ -633,7 +733,7 @@ body {
         max-width: 1440px;
     }
 
-    
+
 
     .header,
     .item_dis-md,

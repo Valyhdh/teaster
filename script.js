@@ -47,12 +47,12 @@ ordercallDb.forEach(button => {
     button.addEventListener('click', function (eventOc) {
         eventOc._isClickOc;
         ordercall.classList.toggle('modal--show');
-        
-        if(ordercall.classList.contains('modal--show')) {
+
+        if (ordercall.classList.contains('modal--show')) {
             feedback.classList.remove('modal--show');
             aside.classList.remove('aside--show');
         };
-        
+
     })
 });
 
@@ -61,12 +61,12 @@ feedbackDb.forEach(button => {
         eventFb._isClickFb;
         feedback.classList.toggle('modal--show');
 
-        if(feedback.classList.contains('modal--show')) {
+        if (feedback.classList.contains('modal--show')) {
             ordercall.classList.remove('modal--show');
             aside.classList.remove('aside--show');
         };
 
-        
+
     })
 });
 
@@ -82,3 +82,64 @@ ordercallDisn.addEventListener('click', function () {
 feedbackDisn.addEventListener('click', function () {
     feedback.classList.remove('modal--show');
 });
+
+new Swiper('.swiper', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.2,
+        },
+        350: {
+            slidesPerView: 1.3,
+        },
+        380: {
+            slidesPerView: 1.4,
+        },
+        410: {
+            slidesPerView: 1.5,
+        },
+        440: {
+            slidesPerView: 1.6,
+        },
+        470: {
+            slidesPerView: 1.7,
+        },
+        500: {
+            slidesPerView: 1.9,
+        },
+        530: {
+            slidesPerView: 2.0,
+        },
+        560: {
+            slidesPerView: 2.1,
+        },
+        590: {
+            slidesPerView: 2.2,
+        },
+        610: {
+            slidesPerView: 2.3,
+        },
+        640: {
+            slidesPerView: 2.4,
+        },
+        670: {
+            slidesPerView: 2.5,
+        },
+        700: {
+            slidesPerView: 2.6,
+        },
+        730: {
+            slidesPerView: 2.7,
+        },
+        760: {
+            slidesPerView: 2.8,
+        },
+
+    },
+    slidesOffsetAfter: 75,
+    spaceBerween: 20,
+});
+
